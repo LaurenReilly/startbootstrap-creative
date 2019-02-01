@@ -4,6 +4,14 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-creative/blob/master/LICENSE)
  */
 
+ :root {
+  --brand-color:  #006600;
+  --brand-alpha: rgba(0,102,0, 0.9);
+  --bootstrap-color: var(--brand-color);
+  --heading-font: 'Sawarabi Mincho', sans-serif;
+  --text-font: 'Lato', sans-serif;
+}
+
 body,
 html {
   width: 100%;
@@ -11,13 +19,13 @@ html {
 }
 
 body {
-  font-family: 'Merriweather', 'Helvetica Neue', Arial, sans-serif;
+  font-family: var(--text-font);
 }
 
 hr {
   max-width: 50px;
   border-width: 3px;
-  border-color: #F05F40;
+  border-color: var(--brand-color);
 }
 
 hr.light {
@@ -25,13 +33,13 @@ hr.light {
 }
 
 a {
-  color: #F05F40;
+  color: var(--brand-color);
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
 }
 
 a:hover {
-  color: #f05f40;
+  color: var(--brand-color);
 }
 
 h1,
@@ -40,11 +48,11 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+  font-family: var(--heading-font);
 }
 
 .bg-primary {
-  background-color: #F05F40 !important;
+  background-color: var(--brand-color) !important;
 }
 
 .bg-dark {
@@ -93,7 +101,7 @@ img::-moz-selection {
 #mainNav {
   border-bottom: 1px solid rgba(33, 37, 41, 0.1);
   background-color: #fff;
-  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+  font-family: var(--heading-font);
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
 }
@@ -101,12 +109,12 @@ img::-moz-selection {
 #mainNav .navbar-brand {
   font-weight: 700;
   text-transform: uppercase;
-  color: #F05F40;
-  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+  color: var(--brand-color);
+  font-family: var(--heading-font);
 }
 
 #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
-  color: #f05f40;
+  color: var(--brand-color);
 }
 
 #mainNav .navbar-nav > li.nav-item > a.nav-link,
@@ -119,12 +127,12 @@ img::-moz-selection {
 
 #mainNav .navbar-nav > li.nav-item > a.nav-link:hover,
 #mainNav .navbar-nav > li.nav-item > a.nav-link:focus:hover {
-  color: #F05F40;
+  color: var(--brand-color);
 }
 
 #mainNav .navbar-nav > li.nav-item > a.nav-link.active,
 #mainNav .navbar-nav > li.nav-item > a.nav-link:focus.active {
-  color: #F05F40 !important;
+  color: var(--brand-color) !important;
   background-color: transparent;
 }
 
@@ -160,10 +168,10 @@ img::-moz-selection {
     background-color: #fff;
   }
   #mainNav.navbar-shrink .navbar-brand {
-    color: #F05F40;
+    color: var(--brand-color);
   }
   #mainNav.navbar-shrink .navbar-brand:focus, #mainNav.navbar-shrink .navbar-brand:hover {
-    color: #f05f40;
+    color: var(--brand-color);
   }
   #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link,
   #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link:focus {
@@ -171,7 +179,7 @@ img::-moz-selection {
   }
   #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link:hover,
   #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link:focus:hover {
-    color: #F05F40;
+    color: var(--brand-color);
   }
 }
 
@@ -240,7 +248,7 @@ header.masthead p {
   text-align: center;
   opacity: 0;
   color: #fff;
-  background: rgba(240, 95, 64, 0.9);
+  background: var(--brand-alpha);
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
 }
@@ -257,7 +265,7 @@ header.masthead p {
 .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category,
 .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
   padding: 0 15px;
-  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+  font-family: var(--heading-font);
 }
 
 .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category {
@@ -288,7 +296,7 @@ header.masthead p {
 }
 
 .text-primary {
-  color: #F05F40 !important;
+  color: var(--brand-color) !important;
 }
 
 .btn {
@@ -296,7 +304,7 @@ header.masthead p {
   text-transform: uppercase;
   border: none;
   border-radius: 300px;
-  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+  font-family: var(--heading-font);
 }
 
 .btn-xl {
@@ -304,16 +312,16 @@ header.masthead p {
 }
 
 .btn-primary {
-  background-color: #F05F40;
-  border-color: #F05F40;
+  background-color: var(--brand-color);
+  border-color: var(--brand-color);
 }
 
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
   color: #fff;
-  background-color: #ee4b28 !important;
+  background-color: var(--brand-color) !important;
 }
 
 .btn-primary:active, .btn-primary:focus {
-  -webkit-box-shadow: 0 0 0 0.2rem rgba(240, 95, 64, 0.5) !important;
-  box-shadow: 0 0 0 0.2rem rgba(240, 95, 64, 0.5) !important;
+  -webkit-box-shadow: 0 0 0 0.2rem var(--brand-alpha) !important;
+  box-shadow: 0 0 0 0.2rem var(--brand-alpha) !important;
 }
